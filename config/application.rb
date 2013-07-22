@@ -60,5 +60,6 @@ module AndreSantosPt
     config.assets.version = '1.0'
 
     config.assets.paths << "#{Rails.root}/app/assets/lib"
+    config.exceptions_app = self.routes
   end
 end

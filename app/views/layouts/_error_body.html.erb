@@ -1,0 +1,18 @@
+<body class="background-dark-blue sidebar-hidden">
+<div class="wrap sidebar-icons">
+  <%=render "home/header"  %>
+  <div class="content container-fluid">
+    <%= yield %>
+  </div>
+</div>
+<script>
+    $.fn.tagcloud.defaults = {
+        size: {start: 11, end: 37, unit: 'px'},
+        color: {start: '#48687E', end: '#fff'}
+    };
+
+    $(function () {
+        $('#cenas a').tagcloud();
+    });
+</script>
+</body>
