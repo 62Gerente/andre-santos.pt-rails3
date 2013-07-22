@@ -1,0 +1,68 @@
+.page-header .nav>li>a {
+	width: 100%;
+}
+
+body.background-dark-red {
+background-image: url(<%= asset_path "bgnoise_lg_dark.png" %>);
+background-color: rgba(110,110,121,0.91);
+background: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(110,110,121,0.91), rgba(146, 0, 0, 0.91), rgba(0, 10, 20, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
+}
+
+body.background-dark-blue {
+background-image: url(<%= asset_path "bgnoise_lg_dark.png" %>);
+background-color: rgba(110,110,121,0.91);
+background: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(0, 0, 7, 0.91), rgba(114,139,146,0.91), rgba(0, 3, 14, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
+}
+
+.page-header .nav>li>a {
+	color:rgb(235, 238, 241);
+}
+
+.profiles {
+	text-align: center;
+}
+
+.profiles a {
+	color:white;
+	opacity: 0.8;
+	filter: alpha(opacity=80); 
+}
+
+.profiles img {
+	height: 45px;
+	opacity: 0.9;
+	filter: alpha(opacity=90); 
+}
+
+.profiles img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100); 
+}
+
+.profiles a:hover {
+	text-decoration: none;
+	opacity: 1;
+	filter: alpha(opacity=100); 
+}
+
+.tagcloud a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: white !important;
+}
+
+.label-language {
+	margin: 10px 0px;
+}
+
+.comming-soon {
+	text-decoration:line-through;
+}
+
+.bio {
+	padding:30px;
+}
+
+.sidebar {
+	position: fixed;
+}
