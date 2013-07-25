@@ -11,8 +11,11 @@ background: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(110,110,1
 body.background-dark-blue {
 background-image: url(<%= asset_path "bgnoise_lg_dark.png" %>);
 background-color: rgba(110,110,121,0.91);
-background: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(0, 0, 7, 0.91), rgba(114,139,146,0.91), rgba(0, 3, 14, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
+background: radial-gradient(farthest-side ellipse at 20% 0, rgba(0, 0, 7, 0.91), rgba(114,139,146,0.91), rgba(0, 3, 14, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
+background: -webkit-radial-gradient(20% 0, farthest-side ellipse, rgba(0, 0, 7, 0.91), rgba(114,139,146,0.91), rgba(0, 3, 14, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
+background: -moz-radial-gradient(20% 0, farthest-side ellipse, rgba(0, 0, 7, 0.91), rgba(114,139,146,0.91), rgba(0, 3, 14, 0.91)),url(<%= asset_path "bgnoise_lg_dark.png" %>);
 }
+
 
 .page-header .nav>li>a {
 	color:rgb(235, 238, 241);
