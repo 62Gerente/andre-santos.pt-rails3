@@ -38,3 +38,4 @@ gem 'unicorn'
 # gem 'debugger'
 
 gem 'therubyracer'
+gem 'twitter'
