@@ -39,3 +39,4 @@ gem 'unicorn'
 
 gem 'therubyracer'
 gem 'twitter'
+gem 'whenever', :require => false
