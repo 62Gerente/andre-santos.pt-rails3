@@ -16,4 +16,13 @@
         $('#cenas a').tagcloud();
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('#load_more_tweets_link').click(function(event) {
+            event.preventDefault();
+            $(this).hide();
+            $('#load_more_tweets_div').show();
+        });
+    });
+</script>
 </body>

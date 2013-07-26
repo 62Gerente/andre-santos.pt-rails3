@@ -1,0 +1,13 @@
+<section class="feed-item">
+  <div class="icon pull-left">
+    <img src="<%= t.profile_image_url %>" class="img-circle" alt="">
+  </div>
+  <div class="feed-item-body">
+    <div class="text">
+      <%= raw display_content_with_links(t) %>
+    </div>
+    <div class="time pull-left">
+      <%= time_ago_in_words t.created %>
+    </div>
+  </div>
+</section>

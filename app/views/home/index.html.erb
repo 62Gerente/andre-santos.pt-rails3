@@ -199,8 +199,27 @@
         <i class="icon-twitter"></i>
         Twitter Feed
       </h4>
+      <div class="actions">
+        <a href="http://twitter.com/62gerente" class="btn btn-transparent btn-mini">Follow Me <i class="icon-twitter"></i></a>
+      </div>
     </header>
     <div class="body">
+      <div id="feed" class="feed">
+        <div class="wrapper">
+          <div class="vertical-line"></div>
+          <%= render "tweets/index" %>
+          <section class="feed-item"  id="load_more_tweets_link">
+            <div class="icon pull-left">
+              <i class="icon-arrow-down"></i>
+            </div>
+            <div class="feed-item-body">
+              <div class="text">
+                <a href="#">Load more...</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
   </section>
 

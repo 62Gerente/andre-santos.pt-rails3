@@ -1,0 +1,9 @@
+<% @tweets.first(7).each do |t| %>
+    <%= render "tweets/show", t:t %>
+<% end %>
+
+<div id="load_more_tweets_div" style="display: none">
+  <% @tweets.drop(7).each do |t| %>
+      <%= render "tweets/show", t:t %>
+  <% end %>
+</div>
