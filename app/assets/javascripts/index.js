@@ -86,11 +86,12 @@ $(function(){
         railVisible: true
     });
 
-    $("#chat-messages").slimscroll({
-        height: '240px',
+    $("#repository").slimscroll({
+        height: 'auto',
         size: '5px',
         alwaysVisible: true,
         railVisible: true
     });
+
 });
 

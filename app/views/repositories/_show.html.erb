@@ -1,0 +1,19 @@
+<li>
+  <div class="pull-left"><a href="<%= r.owner_url %>"><img src="<%= r.owner_avatar %>" alt="" class="pull-left img-circle"></a></div>
+  <div class="user-info">
+    <div class="name"><a href="<%= r.html_url %>"><%= r.name %></a></div>
+    <div class="position"><%= r.description %></div>
+    <div class="time row-fluid">
+      <div class="span4">
+        <i class="eicon-code"></i>
+        <%= r.language.blank? ? "Unknown" : r.language %>
+      </div>
+      <div class="span4">
+        <i class="eicon-clock"></i> <%= time_ago_in_words r.created %>
+      </div>
+      <div class="span4 stats-repository"> <i class="eicon-flow-branch"></i> <%= r.forks %> &nbsp; <i class=" icon-eye-open"> </i> <%= r.watchers %>
+      </div>
+    </div>
+
+  </div>
+</li>

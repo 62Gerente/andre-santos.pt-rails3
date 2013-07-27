@@ -19,6 +19,10 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 6.hours do
+every 3.hours do
   runner "Tweet.get_latest"
+end
+
+every 6.hours do
+  runner "Repository.get_latest"
 end

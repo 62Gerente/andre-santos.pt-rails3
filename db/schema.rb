@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130726184545) do
+ActiveRecord::Schema.define(:version => 20130726224024) do
+
+  create_table "repositories", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created"
+    t.string   "default_branch"
+    t.string   "html_url"
+    t.integer  "forks"
+    t.string   "id_str"
+    t.integer  "watchers"
+    t.string   "language"
+    t.string   "owner_avatar"
+    t.string   "owner_url"
+    t.string   "owner_login"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "tweets", :force => true do |t|
     t.string   "content"

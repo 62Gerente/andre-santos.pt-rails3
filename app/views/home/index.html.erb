@@ -200,7 +200,7 @@
         Twitter Feed
       </h4>
       <div class="actions">
-        <a href="http://twitter.com/62gerente" class="btn btn-transparent btn-mini">Follow Me <i class="icon-twitter"></i></a>
+        <a href="http://twitter.com/62gerente" target="_blank" class="btn btn-transparent btn-mini">Follow Me <i class="icon-twitter"></i></a>
       </div>
     </header>
     <div class="body">
@@ -214,7 +214,7 @@
             </div>
             <div class="feed-item-body">
               <div class="text">
-                <a href="#">Load more...</a>
+                <a href="#">View more...</a>
               </div>
             </div>
           </section>
@@ -223,15 +223,32 @@
     </div>
   </section>
 
-  <section class="widget large">
+  <section class="widget big">
     <a id="repositories"></a>
     <header>
       <h4>
         <i class="eicon-github"></i>
             GitHub Repositories
       </h4>
+      <div class="actions">
+        <a href="https://github.com/62Gerente" target="_blank" class="btn btn-transparent btn-mini">Follow Me <i class="icon-github"></i></a>
+      </div>
     </header>
     <div class="body">
+      <div id="repository" class="feed">
+        <div id="stats" class="tab-pane clearfix active">
+          <ul class="users-list">
+            <%= render "repositories/index" %>
+            <li id="load_more_repositories_link">
+              <div class="pull-left"><i class="icon-arrow-down"></i>
+              </div>
+              <div class="user-info">
+                <div class="name">View more...</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </div>

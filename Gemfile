@@ -40,3 +40,4 @@ gem 'unicorn'
 gem 'therubyracer'
 gem 'twitter'
 gem 'whenever', :require => false
+gem "github_api"

@@ -3,6 +3,7 @@ class HomeController < ActionController::Base
 
   def index
     @tweets = Tweet.all
+    @repositories = Repository.all
   end
 
   def sub_layout

@@ -25,4 +25,13 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('#load_more_repositories_link').click(function(event) {
+            event.preventDefault();
+            $(this).hide();
+            $('#load_more_repositories_div').show();
+        });
+    });
+</script>
 </body>
